@@ -18,10 +18,11 @@ body {
     right: 20px; /* Distance from the right */
     padding: 5px 10px; /* Padding for the button */
     /* border: 1px solid black; */
+    border: 0.9px solid rgb(255, 255, 255);
     cursor: pointer;
     background-color: black;
     font-family: 'IBM Plex Mono', monospace; /* Same typeface */
-    font-size: 12px; /* Smaller font size */
+    font-size: 11px; 
     color: #f0f0f0;
 }
 
@@ -38,7 +39,8 @@ body {
 
 
 h1{
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 400;
     color: rgb(255, 255, 255);
     text-align: left;
     /* padding-top: 15px; */
@@ -47,7 +49,7 @@ h1{
 }
 
 h5{
-    font-size: 10px;
+    font-size: 9px; 
     color: grey;
     text-align: left;
     font-weight: lighter;
@@ -66,14 +68,14 @@ h5{
     color: white;
 }
 
-.filter-button:hover {
+/* .filter-button:hover {
     background-color: #f0f0f0;
-}
+} */
 
 .grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 25px;
+    gap: 30px;
 }
 
 p{
@@ -97,7 +99,8 @@ p{
 
 .grid-item:hover {
     border: 0.9px solid rgb(255, 255, 255); /* Black border on hover */
-    transform: scale(1.55); /* Increase size by 35% */
+    transform: scale(1.2); /* Increase size by 35% */
+    overflow: hidden; /* Hide any overflow due to scaling */
     z-index: 1; /* Bring hovered item to the front */
 }
 
@@ -110,10 +113,10 @@ p{
 
 .grid-item p {
     text-align: center;
-    margin: 0; /* Remove margin to keep text size consistent */
-    transition: none; /* Ensure no size change on hover */
-    transform: scale(1); /* Prevent any scaling of text */
-    font-size: 10px; /* Smaller font size */
+    margin: 0; 
+    transition: none;
+    transform: scale(1); 
+    font-size: 9px; 
 }
 
 .text-container {
@@ -127,3 +130,14 @@ p{
 a {
     text-decoration:none;
  }
+
+
+ * {
+    box-sizing: border-box; /* Ensure padding and border do not affect element's width and height */
+}
+
+.image {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
