@@ -2,6 +2,7 @@ body {
     font-family: 'IBM Plex Mono', monospace;
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
 .container {
@@ -38,7 +39,7 @@ body {
 
 h1{
     font-size: 14px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: left;
     /* padding-top: 15px; */
     padding-left: 10px;
@@ -57,11 +58,12 @@ h5{
 .filter-button {
     padding: 5px 7px;
     margin: 0 5px; /* Margin between buttons */
-    border: 1px solid black;
+    border: 0.9px solid rgb(255, 255, 255);
     cursor: pointer;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     font-family: 'IBM Plex Mono', monospace; /* Same typeface */
     font-size: 10px; /* Smaller font size */
+    color: white;
 }
 
 .filter-button:hover {
@@ -90,12 +92,12 @@ p{
     transition: transform 0s, border 0s; /* No transition for immediate effect */
     position: relative; /* Added for z-index */
     overflow: hidden; /* Prevents overflow of text and image */
-    background-color: white; /* Background color for items */
+    background-color: rgb(0, 0, 0); /* Background color for items */
 }
 
 .grid-item:hover {
-    border: 0.8px solid black; /* Black border on hover */
-    transform: scale(1.25); /* Increase size by 35% */
+    border: 0.9px solid rgb(255, 255, 255); /* Black border on hover */
+    transform: scale(1.55); /* Increase size by 35% */
     z-index: 1; /* Bring hovered item to the front */
 }
 
