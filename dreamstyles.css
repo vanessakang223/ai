@@ -1,0 +1,63 @@
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    padding: 15px;
+    background-color: rgb(0, 0, 0);
+}
+
+h1{
+    text-transform: uppercase;
+    color: white;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.back-button {
+    position: absolute;
+    left: 20px;
+    bottom: 20px; /* Distance from the bottom */
+    padding: 5px 7px;
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 11px; /* Smaller font size */
+    color: white;
+    text-decoration:none;
+}
+
+.container {
+    display: flex; /* Use flexbox to create a two-column layout */
+    height: 100vh; /* Full height of the viewport */
+}
+
+.image-section {
+    flex: 0 0 60%; /* 65% width */
+    overflow: hidden; /* Hide overflow if image is too large */
+}
+
+.image {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.text-section {
+    flex: 0 0 40%; /* 35% width */
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    overflow-y: auto; 
+    color: white;
+}
+
+hr {
+    margin: 14px 0; /* Add margin around horizontal lines */
+    margin-right: 14px;
+    border: none; /* Remove default border */
+    border-top: 0.9px solid #ccc; /* Add custom top border */
+}
+
+p{
+    margin: 0;
+    line-height: 1.3;
+}
+
