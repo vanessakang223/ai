@@ -2,10 +2,12 @@ body {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 11px;
     padding: 15px;
+    margin: 0;
 }
 
 .about-container {
-    max-width: 300px;
+    max-width: 350px;
+    text-align: justify 
 }
 
 .back-button {
@@ -25,4 +27,8 @@ body {
 a {
     text-decoration:none;
     color: black;
+ }
+
+ p{
+    margin: 0;
  }

@@ -31,7 +31,7 @@ h1{
 }
 
 .image-section {
-    flex: 0 0 60%; /* 65% width */
+    flex: 0 0 55%; /* 55% width */
     overflow: hidden; /* Hide overflow if image is too large */
 }
 
@@ -41,7 +41,7 @@ h1{
 }
 
 .text-section {
-    flex: 0 0 40%; /* 35% width */
+    flex: 0 0 45%; /* 45% width */
     padding-bottom: 20px;
     padding-right: 20px;
     padding-left: 20px;
