@@ -1,0 +1,124 @@
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+}
+
+.about-button {
+    position: absolute; /* Absolute positioning */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    padding: 5px 10px; /* Padding for the button */
+    /* border: 1px solid black; */
+    cursor: pointer;
+    background-color: black;
+    font-family: 'IBM Plex Mono', monospace; /* Same typeface */
+    font-size: 12px; /* Smaller font size */
+    color: #f0f0f0;
+}
+
+.about-button:hover {
+    /* background-color: #f0f0f0; Hover effect */
+}
+
+
+.filter-buttons {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row; /* Horizontal alignment of buttons */
+}
+
+
+h1{
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    /* padding-top: 15px; */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h5{
+    font-size: 10px;
+    color: grey;
+    text-align: left;
+    font-weight: lighter;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.filter-button {
+    padding: 5px 7px;
+    margin: 0 5px; /* Margin between buttons */
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: white;
+    font-family: 'IBM Plex Mono', monospace; /* Same typeface */
+    font-size: 10px; /* Smaller font size */
+}
+
+.filter-button:hover {
+    background-color: #f0f0f0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
+}
+
+p{
+    font-size: 11px;
+    color: grey;
+    padding-top: 15px;
+    font-weight: lighter;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent; /* Invisible border for layout */
+    transition: transform 0s, border 0s; /* No transition for immediate effect */
+    position: relative; /* Added for z-index */
+    overflow: hidden; /* Prevents overflow of text and image */
+    background-color: white; /* Background color for items */
+}
+
+.grid-item:hover {
+    border: 0.8px solid black; /* Black border on hover */
+    transform: scale(1.25); /* Increase size by 35% */
+    z-index: 1; /* Bring hovered item to the front */
+}
+
+.grid-item img {
+    max-width: 75%;
+    /* height: auto; */
+    height: auto;
+    padding-top: 10px;
+}
+
+.grid-item p {
+    text-align: center;
+    margin: 0; /* Remove margin to keep text size consistent */
+    transition: none; /* Ensure no size change on hover */
+    transform: scale(1); /* Prevent any scaling of text */
+    font-size: 10px; /* Smaller font size */
+}
+
+.text-container {
+    position: absolute; /* Positioning relative to grid-item */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%) scale(1); /* Keep text at original size */
+    pointer-events: none; /* Ignore mouse events */
+}
+
