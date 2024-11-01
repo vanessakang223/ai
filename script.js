@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             gridItems.forEach(item => {
                 if (filterValue === 'all' || item.classList.contains(filterValue)) {
-                    item.style.display = 'flex'; // Show the item
+                    item.style.display = ''; // Show the item
                 } else {
                     item.style.display = 'none'; // Hide the item
                 }
