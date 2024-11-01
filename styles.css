@@ -122,3 +122,6 @@ p{
     pointer-events: none; /* Ignore mouse events */
 }
 
+a {
+    text-decoration:none;
+ }
