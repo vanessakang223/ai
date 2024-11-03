@@ -14,7 +14,7 @@ body {
 
 .about-button {
     position: absolute; 
-    top: 20px; /* Distance from the top */
+    top: 15px; /* Distance from the top */
     right: 20px; 
     padding: 5px 10px; /* Padding for the button */
     /* border: 1px solid black; */
@@ -34,6 +34,7 @@ body {
 .filter-buttons {
     margin-bottom: 20px;
     display: flex;
+    text-transform: uppercase;
     flex-direction: row; /* Horizontal alignment of buttons */
 }
 
@@ -75,7 +76,8 @@ h5{
 .grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 30px;
+    gap: 20px;
+    justify-content: space-between; /* This helps with spacing */
 }
 
 p{
@@ -99,7 +101,7 @@ p{
 
 .grid-item:hover {
     border: 0.9px solid rgb(255, 255, 255); /* Black border on hover */
-    transform: scale(1.2); /* Increase size by 35% */
+    transform: scale(1.25); /* Increase size by 25% */
     overflow: hidden; /* Hide any overflow due to scaling */
     z-index: 1; /* Bring hovered item to the front */
 }
