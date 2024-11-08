@@ -13,7 +13,7 @@ body {
 }
 
 .about-button {
-    position: absolute; 
+    position: fixed; 
     top: 15px; /* Distance from the top */
     right: 20px; 
     padding: 5px 10px; /* Padding for the button */
@@ -26,12 +26,33 @@ body {
     color: #f0f0f0;
 }
 
+.plus-button {
+    /* width: 70px;
+    height: 70px; */
+    position: fixed; 
+    padding-left: 15px;
+    padding-right: 15px;
+    bottom: 15px; /* Distance from the bottom */
+    right: 20px; 
+    align-items: center; 
+    /* padding-right: 35px; Padding for the button */
+    border: 0.9px solid rgb(255, 255, 255);
+    cursor: pointer;
+    background-color: black;
+    font-size: 11px; 
+    color: #f0f0f0;
+    font-size: 60px;
+    font-weight:normal;
+}
+
 .about-button:hover {
     /* background-color: #f0f0f0; Hover effect */
 }
 
 
 .filter-buttons {
+    position: fixed;
+    z-index: 1;
     margin-bottom: 20px;
     display: flex;
     text-transform: uppercase;
@@ -85,6 +106,8 @@ p{
     color: grey;
     padding-top: 15px;
     font-weight: lighter;
+    font-family: 'IBM Plex Mono', monospace;
+
 }
 
 .grid-item {
